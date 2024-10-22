@@ -1,45 +1,95 @@
-let nums = []
+var total = ''
+var res = document.getElementById('visor')
 
 function n1() {
-    document.getElementById('visor').value += 1
+    res.value += 1
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
 function n2() {
-    document.getElementById('visor').value += 2
+    res.value += 2
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
 function n3() {
-    document.getElementById('visor').value += 3
+    res.value += 3
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
 function n4() {
-    document.getElementById('visor').value += 4
+    res.value += 4
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
 function n5() {
-    document.getElementById('visor').value += 5
+    res.value += 5
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
 function n6() {
-    document.getElementById('visor').value += 6
+    res.value += 6
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
 function n7() {
-    document.getElementById('visor').value += 7
+    res.value += 7
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
 function n8() {
-    document.getElementById('visor').value += 8
+    res.value += 8
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
 function n9() {
-    document.getElementById('visor').value += 9
+    res.value += 9
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
 function n0() {
-    document.getElementById('visor').value += 0
+    res.value += 0
+    document.getElementById('resultado').style.display = 'none'
+    document.getElementById('visor').style.display = 'block'
 }
 
-function clear() {
-    document.getElementById('visor') = ''
+function soma() {
+    var valor = document.getElementById('visor').value
+    document.getElementById('resultado').style.display = 'block'
+    document.getElementById('visor').style.display = 'none'
+    if (valor.length == 0) {
+        window.alert('Digite alguma valor')
+    } else {
+        total += valor
+        document.getElementById('resultado').innerText = "Total: " + total
+    }
+}
+
+function subt() {
+    var valor = document.getElementById('visor').value
+    if (valor.length == 0) {
+        window.alert('Digite alguma valor')
+    }
+}
+
+function resultado() {
+    var valor = document.getElementById('visor').value
+    if (valor.length == 0) {
+        window.alert('Digite alguma valor')
+    }
+}
+
+function divs() {
+    var valor = document.getElementById('visor').value
+    if (valor.length == 0) {
+        window.alert('Digite alguma valor')
+    }
 }

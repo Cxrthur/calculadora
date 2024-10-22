@@ -31,6 +31,16 @@ section {
     -webkit-appearance: none;
 }
 
+#resultado {
+    display: none;
+    background-color: #9A957C;
+    width: 280px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 input {
     width: 60px;
     height: 60px;
