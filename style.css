@@ -1,0 +1,34 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #373831;
+}
+
+#visor {
+    background-color: #9A957C;
+    width: 280px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
