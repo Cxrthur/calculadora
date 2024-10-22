@@ -1,51 +1,45 @@
-let res = [document.getElementById('visor')]
-let num = []
+let nums = []
 
 function n1() {
-    res.innerHTML += 1
+    document.getElementById('visor').value += 1
 }
 
 function n2() {
-    res.innerHTML +=2
+    document.getElementById('visor').value += 2
 }
 
 function n3() {
-    res.innerHTML +=3
+    document.getElementById('visor').value += 3
 }
 
 function n4() {
-    res.innerHTML +=4
+    document.getElementById('visor').value += 4
 }
 
 function n5() {
-    res.innerHTML +=5
+    document.getElementById('visor').value += 5
 }
 
 function n6() {
-    res.innerHTML +=6
+    document.getElementById('visor').value += 6
 }
 
 function n7() {
-    res.innerHTML +=7
+    document.getElementById('visor').value += 7
 }
 
 function n8() {
-    res.innerHTML +=8
+    document.getElementById('visor').value += 8
 }
 
 function n9() {
-    res.innerHTML +=9
+    document.getElementById('visor').value += 9
 }
 
 function n0() {
-    res.innerHTML +=0
+    document.getElementById('visor').value += 0
 }
 
-function soma() {
-    num = res
-    res.innerHTML = ''
-}
-
-function resultado() {
-    res.innerHTML = num
+function clear() {
+    document.getElementById('visor') = ''
 }
