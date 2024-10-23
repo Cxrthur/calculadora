@@ -1,14 +1,25 @@
-var res = document.getElementById('resposta')
+var res = document.getElementById('resultado')
+var val = document.getElementById('valor')
 var total = 0
 
 function soma() {
-    var vl1 = document.getElementById('valor1').value
-    if (vl1.length == 0) {
-        window.alert('Digita alguma coisa dog')
+    if (val.value == '') {
+        window.alert('digita')
     } else {
-        var num = document.getElementById('valor1')
-        total += Number(num.value)
-        res.innerHTML = total
-        num.value = ''
+        total += Number(val.value)
+        val.value = total
     }
+}
+
+function resultado() {
+    var vl1 = document.getElementById('valor')
+    var vl2 = document.getElementById('valor')
+    if (vl1 == 0) {
+        vl1.value = val
+    } else {
+        vl2.value = val
+    }
+    var soma = vl1 + vl2
+    res.innerText = soma
+
 }

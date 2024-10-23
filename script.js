@@ -1,5 +1,5 @@
 var res = document.getElementById('visor')
-var total = ''
+var total = 0
 
 function n1() {
     res.value += 1
@@ -43,36 +43,10 @@ function n0() {
 }
 
 function soma() {
-    if (Number(res.value) == 0) {
-        window.alert('Digite alguma valor')
+    if (res.value == '') {
+        window.alert('nenhum numero digitado')
     } else {
         total += Number(res.value)
-        res.value = ''
+        res.value = total
     }
-}
-
-function subt() {
-    if (Number(res.value) == 0) {
-        window.alert('Digite alguma valor')
-    } else {
-        total += Number(res.value)
-        res.value = ''
-    }
-}
-
-function divs() {
-    if (Number(res.value) == 0) {
-        window.alert('Digite alguma valor')
-    } else {
-        total += Number(res.value)
-        res.value = ''
-    }
-}
-function resultado() {
-    res.value = total
-}
-
-function clear() {
-    res.value = ''
-    total.value = ''
 }
