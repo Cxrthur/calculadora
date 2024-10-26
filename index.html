@@ -11,28 +11,25 @@
         <h1>Calculadora</h1>
     </header>
     <section>
-        <div id="resposta">
-            <div id="resultado">
-
-            </div>
+        <div>
             <input type="number" name="visor" id="visor">
         </div>
-        <div class="linha">
-            <input type="button" value="1" id="n1" onclick="n1()">
-            <input type="button" value="2" id="n2" onclick="n2()">
-            <input type="button" value="3" id="n3" onclick="n3()">
+        <div class="linha"> 
+            <button onclick="botarnumero(1)">1</button>
+            <button onclick="botarnumero(2)">2</button>
+            <button onclick="botarnumero(3)">3</button>
             <input type="button" value="+" id="resposta" onclick="soma()">
         </div>
         <div class="linha">
-            <input type="button" value="4" id="n4" onclick="n4()">
-            <input type="button" value="5" id="n5" onclick="n5()">
-            <input type="button" value="6" id="n6" onclick="n6()">
+            <button onclick="botarnumero(4)">4</button>
+            <button onclick="botarnumero(5)">5</button>
+            <button onclick="botarnumero(6)">6</button>
             <input type="button" value="-" id="somar" onclick="subt()">
         </div>
         <div class="linha">
-            <input type="button" value="7" id="n7" onclick="n7()">
-            <input type="button" value="8" id="n8" onclick="n8()">
-            <input type="button" value="9" id="n9" onclick="n9()">
+            <button onclick="botarnumero(7)">7</button>
+            <button onclick="botarnumero(8)">8</button>
+            <button onclick="botarnumero(9)">9</button>
             <input type="button" value="x" id="subt" onclick="multip()">
         </div>
         <div class="linha">
@@ -43,7 +40,9 @@
         </div>
     </section>
     <footer>
-        <p><a href="#">@c.asbrizolla</a></p>
+        <div id="resposta">
+            resultado
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
