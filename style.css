@@ -28,6 +28,7 @@ section {
     width: 280px;
     height: 60px;
     padding: 10px;
+    border-style: none;
     border-radius: 10px;
     margin-bottom: 20px;
     font-size: 3em;
@@ -36,6 +37,18 @@ section {
 
 #visor::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+#resultado {
+    display: none;
+    background-color: #9A957C;
+    width: 280px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-family: 'calculadora';
 }
 
 button {
